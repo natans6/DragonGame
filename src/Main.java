@@ -1,0 +1,52 @@
+public class Main {
+    public static void main(String[] args) {
+        Time time1 = new Time(8, 9, 58);
+        System.out.println(time1.info());
+        time1.tick();
+        System.out.println(time1.info());
+        time1.tick();
+        System.out.println(time1.info());
+        time1.tick();
+        System.out.println(time1.info());
+        time1.tick();
+        System.out.println(time1.info());
+        time1.tick();
+        time1.tick();
+        time1.tick();
+        time1.tick();
+        time1.tick();
+        time1.tick();
+        time1.tick();
+        time1.tick();
+        System.out.println(time1.info());
+        System.out.println("<------------------------------>");
+        Time time2 = new Time(15, 59, 58);
+        System.out.println(time2.info());
+        time2.tick();
+        System.out.println(time2.info());
+        time2.tick();
+        System.out.println(time2.info());
+        time2.tick();
+        System.out.println(time2.info());
+        System.out.println("<------------------------------>");
+        Time time3 = new Time(23, 59, 58);
+        System.out.println(time3.info());
+        time3.tick();
+        System.out.println(time3.info());
+        time3.tick();
+        System.out.println(time3.info());
+        time3.tick();
+        System.out.println(time3.info());
+        System.out.println("<------------------------------>");
+        Time time4 = new Time(10, 14, 43);
+        System.out.println(time4.info());
+        System.out.println("<------------------------------>");
+        Time time5 = new Time(8, 30, 29);
+        time4.add(time5);
+        System.out.println(time4.info());
+        System.out.println(time5.info());
+        Time time6 = new Time(7, 20, 0);
+        time4.add(time6);
+        System.out.println(time4.info());
+    }
+}
